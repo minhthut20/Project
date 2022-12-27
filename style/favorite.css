@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.icon {
+    width: 30px;
+}
+
+.header {
+    border-top: 10px solid #81d8d0;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-icon {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+.pop-up-icon {
+    border-top: 75px solid #81d8d0;
+    background-color: white;
+    width: 450px;
+    height: 650px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 40px;
+    right: 0px;
+    visibility: hidden;
+}
+
+.pop-up-icon h2 {
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.pop-up-icon p {
+    margin-left: 30px;
+    color: rgb(50, 50, 50);
+}
+
+.pop-up-icon a {
+    margin-left: 40px;
+    text-decoration: underline;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+.icon-login:hover .pop-up-icon {
+    visibility: visible;
+
+}
+
+.header-name h2 a {
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    font-size: 60px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.menu a {
+    color: rgb(111, 110, 110);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#card {
+    border-radius: 25px;
+}
+
+.card-head {
+    margin-top: 30px;
+    position: relative;
+    height: 252px;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fa782e', endColorstr='#c82930', GradientType=1);
+    border-radius: 25px 25px 0 0;
+    width: 900px;
+}
+
+.card-head img {
+    margin-left: 50px;
+    width: 280px;
+    border-radius: 5px;
+    height: 252px;
+}
+
+.card-body {
+    height: 255px;
+    background: #fff;
+    border-radius: 0 0 25px 25px;
+    margin-bottom: 50px;
+}
+
+.product-title {
+    margin-left: 130px;
+    padding: 20px 20px 90px 20px;
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.product-price {
+    margin-left: 50px;
+    background: #11e95b;
+    padding: 7px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    border-radius: 7px;
+    margin-top: -13px;
+}
+
+.remove_btn {
+    margin-left: 50px;
+    background: red;
+    padding: 7px 20px;
+    text-align: center;
+    display: inline-block;
+    width: 175px;
+    font-size: 24px;
+    font-weight: 200;
+    color: #fff;
+    border-radius: 7px;
+    margin-top: 10px;
+}

@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.icon {
+    width: 30px;
+}
+
+.header {
+    border-top: 10px solid #81d8d0;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-icon {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+.pop-up-icon {
+    border-top: 75px solid #81d8d0;
+    background-color: white;
+    width: 450px;
+    height: 650px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 40px;
+    right: 0px;
+    visibility: hidden;
+}
+
+.pop-up-icon h2 {
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.pop-up-icon p {
+    margin-left: 30px;
+    color: rgb(50, 50, 50);
+}
+
+.pop-up-icon a {
+    margin-left: 40px;
+    text-decoration: underline;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+.icon-login:hover .pop-up-icon {
+    visibility: visible;
+
+}
+
+.header-name h2 a {
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    font-size: 60px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.menu a {
+    color: rgb(111, 110, 110);
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.content-1 {
+    background-color: #fafafa;
+    margin-top: 30px;
+    padding: 30px;
+    display: flex;
+    gap: 50px;
+}
+
+.content-1 img {
+   width: 30%;
+}
+
+.content-1-text h4 {
+    font-size: 30px;
+}
+
+.content-1-text p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(111, 110, 110);
+}
+
+.content-2 {
+    background-color: #fafafa;
+    margin-top: 30px;
+    padding: 30px;
+    display: flex;
+    gap: 50px;
+}
+
+.content-2 img {
+    width: 30%;
+}
+
+.content-2-text h4 {
+    font-size: 30px;
+}
+
+.content-2-text p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(111, 110, 110);
+}
+
+.footer {
+    border-top: 5px solid #81d8d0;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.footer-detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-detail-left {
+    display: flex;
+    gap: 70px;
+    padding: 30px;
+}
+
+.footer-detail-rigth {
+    padding: 30px;
+}
+
+.footer-detail-2 h3,
+p {
+    margin-bottom: 20px;
+}
+
+.footer-detail-2 h3 {
+    font-size: 15px;
+}
+
+.footer-detail-2 p {
+    color: rgb(71, 70, 70);
+    font-size: 15px;
+}

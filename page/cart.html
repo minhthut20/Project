@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Island+Moments&family=Roboto+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style/cart.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-logo">
+                <a href=""><img src="/assets/chữ-D.jpg" alt="" class="icon"></a>
+            </div>
+            <div class="header-name">
+                <h2><a href="/index.html">Dunkin & Donuts</a></h2>
+            </div>
+            <div class="header-icon">
+                <a href="/page/favorite.html"><img src="/assets/heart.gif" alt="" class="icon"></a>
+                <a href="/page/cart.html"><img src="/assets/shoppingbag-empty.gif" alt="" class="icon"></a>
+                <div class="icon-login">
+                    <a href="#"><img src="/assets/login.gif" alt="" class="icon"></a>
+                    <div class="pop-up-icon">
+                        <h2>Sign In or Sign Out</h2>
+                        <p>With an account you can check out faster, view your</p>
+                        <p>online order history and access your shopping bag or</p>
+                        <p>saved items from any device.</p>
+                        <a href="/page/login.html">Sign In</a>
+                        <a href=>Sign Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-menu">
+                <nav class="menu">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/page/about.html">About</a></li>
+                    <li><a href="/page/stories.html">Stories</a></li>
+                    <li><a href="/page/gifts.html">Gifts</a></li>
+                    <li><a href="/page/blog.html">Blog</a></li>
+                    <li><a href="/page/contact.html">Contact</a></li>
+                </nav>
+            </div>
+        </div>
+        <div class="content-1-text">
+            <h1>Shopping Cart</h1>
+        </div>
+        <table id="productCart"></table>
+
+        <div class="total">
+            <p class="totalTitle" id="total">Payment :</p>
+            <input onclick="payment_btn()" type="button" id="btn-total" />
+        </div>
+        <div class="alert-pop-up">
+            <div class="alert-pop-up-detail">
+                <h2>Please fill in the information</h2>
+                <p>Name</p><input type="text">
+                <p>Adress</p><input type="text">
+                <p>Moble</p><input type="text">
+                <p>Bank Number</p><input type="text">
+                <div class="alert-pop-up-detail-btn">
+                    <button onclick="confirm_btn()">Confirm</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="/js/cart.js"></script>
+
+</html>

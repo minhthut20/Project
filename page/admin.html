@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Island+Moments&family=Roboto+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style/admin.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-name">
+                <h2><a href="/index.html">Dunkin & Donuts</a></h2>
+            </div>
+            <div class="header-icon">
+                <div class="icon-login">
+                    <a href="#"><img src="/assets/login.gif" alt="" class="icon"></a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-menu">
+                <nav class="menu">
+                    <li>
+                        <p onclick="showRenderProduct()">Product List </p>
+                    </li>
+                    <li>
+                        <p onclick="showUserProduct()">Users</p>
+                    </li>
+                </nav>
+            </div>
+            <div class="render-Product" id="render-Product">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th class="col-image">Image</th>
+                            <th>Name Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="listProductManager">
+                    </tbody>
+                </table>
+            </div>
+            <div class="user-content" id="user-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Email</th>
+                            <th>PassWord</th>
+                            <th>Security</th>
+                        </tr>
+                    </thead>
+                    <tbody class="listUserManager">
+                    </tbody>
+                </table>
+            </div>
+            <div class="create-content">
+                <div class="create-top">
+                    <div class="create-name">
+                        <p>Image</p>
+                        <p>Name</p>
+                        <p>Price</p>
+                    </div>
+                    <div class="create-input">
+                        <input type="text" id="createImg">
+                        <input type="text" id="createName">
+                        <input type="text" id="createPrice">
+                    </div>
+                </div>
+                <div class="create-button">
+                    <button id="updateBtn">Update</button>
+                    <button>Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="/js/admin.js"></script>
+</html>
