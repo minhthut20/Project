@@ -1,0 +1,44 @@
+.register_section {
+    height: 540px;
+
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.172);
+    position: absolute;
+    /* top: 150px; */
+    padding: 90px;
+    padding-top: 10px;
+    /* right: 100px; */
+    border-radius: 100px;
+}
+
+.register_section label {
+    color: white !important;
+}
+
+.register_section a {
+    color: rgb(74, 74, 243) !important;
+}
+
+@media(min-width:568px) {
+    .register_section {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+
+
+}
+
+@media(min-width:768px) {
+    .register_section {
+        top: 150px;
+        right: 100px;
+        transform: translate(0%, 0%);
+    }
+}
+
+.register_form {
+    font-size: 50px;
+    padding: 30px;
+    color: white;
+}
