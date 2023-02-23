@@ -15,9 +15,11 @@ const UploadPicture = (props) => {
     const [previewImage, setPreviewImage] = useState('');
     const [previewTitle, setPreviewTitle] = useState('');
 
-    console.log(props, "UPLOAD IMG");
-    let imgName = props.post.image
-    let imgUrl = images[imgName]
+    let imgName = "", imgUrl = "";
+    if (props.post !== undefined) {
+        imgName = props.post.image
+        imgUrl = images[imgName]
+    }
     // console.log(imgName, imgUrl);
     const [fileList, setFileList] = useState([
         {
